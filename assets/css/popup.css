@@ -1,0 +1,128 @@
+.popup-parent{
+    padding: 50px;
+    min-height: 100vh;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    z-index: 1000;
+    background: rgba(0,0,0,0.1);
+    backdrop-filter: blur(3px);
+
+  }
+  .Popup-container{
+     min-height: 100vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+  }
+  .Popup-container .popup-box{
+     height: 500px;
+     background: white;
+     width: 500px;
+     position: relative;
+     box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+  }
+  .Popup-container .popup-box .fa-xmark{
+     position: absolute;
+     top: 0;
+     right: 0;
+     width: 40px;
+     height: 40px;
+     border-radius: 50%;
+     line-height: 40px;
+     text-align: center;
+  }
+  .Popup-container .popup-box .fa-xmark:hover{
+     background: aliceblue;
+     cursor: pointer;
+  }
+  
+
+  @media (max-width: 720px){
+     .Popup-container .popup-box{
+       width: 500px;
+       height: 500px;
+     }  
+  }
+  @media (max-width: 500px){
+    .Popup-container .popup-box{
+      width: 400px;
+      height: 400px;
+    }  
+ }
+ @media (max-width: 300px){
+    .Popup-container .popup-box{
+      width: 250px;
+      height: 200px;
+    }  
+ }
+  /* customer h2 */
+
+  .customerh2{
+    padding: 30px 120px;
+    font-weight: 700;
+    font-size: 30px;
+  }
+  /* Our Services */
+  
+.new-service{
+   background: rgba(0,0,0,0.1);
+   min-height: 75vh;
+   width: 100%;
+   margin-bottom: 30px;
+   padding-bottom: 40px;
+}
+.service-cards{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+   gap: 20px;
+}
+.service-card{
+   background: white;
+   width: 330px;
+   height: 380px;
+   padding: 15px;
+   box-shadow: 2px 1px 5px rgba(0,0,0,0.1);
+   border-radius: 5px;
+}
+.service-card .service-img{
+   width: 300px;
+   height: 200px;
+}
+.service-card img{
+   width: 300px ;
+   height: 200px;
+   object-fit: cover;
+}
+.service-content{
+  margin-top: 20px;
+}
+.service-content h2{
+   font-size: 23px;
+}
+ 
+.service-content p{
+  text-align: justify;
+}
+@media (max-width: 550px){
+   .service-card{
+      width: 90vw;
+      height: fit-content;
+   }
+   .service-img {
+      width: 100% !important;
+      height: fit-content;
+   }
+   .service-card img{
+      width: 100% !important;
+   
+   }
+   .service-cards{
+      gap: 20px;
+   }
+   
+}
